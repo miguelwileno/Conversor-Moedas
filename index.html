@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title> 💰 Conversor de Moedas</title>
+</head>
+
+<body>
+
+    <img class="logo-projeto" src="/assets/logo-convert.gif" alt="logo">
+    </div>
+    <main>
+        <label>Converter <b>de</b></label>
+        <select class="select-input">
+            <option value="real"> R$ Real </option>
+        </select>
+        <label>Converter <b>para</b></label>
+        <select class="select-output">
+            <option value="dolar"> US$ Dólar Americano </option>
+            <option value="real"> R$ Real </option>
+            <option value="euro"> $ Euro </option>
+            <option value="yuan"> ¥ Chinese Yuan </option>
+        </select>
+
+        <label>
+            <b>Valor</b>
+            <input class="Valor-Usuario" placeholder="Ex: R$ 10.000">
+        </label>
+
+        <button class="convert-button"> converter </button>
+        <section>
+            <div class="currency-box">
+                <img class="bandeira-converção" src="assets/brasil.png" alt="moeda-imput">
+                <p class="currency">Real</p>
+                <p class="valor-primario">R$ 0,00</p>
+            </div>
+            <img class="arrow-logo" src="assets/Vector1.png" alt="seta-conversão">
+            <div class="currency-box">
+                <img class="bandeira-convertida" src="assets/dolar.png" alt="moeda-outpoot">
+                <p class="currency" id="Currency-name">Dólar Americano</p>
+                <p class="valor-secundario">R$ 0,00</p>
+            </div>
+        </section>
+    </main>
+
+    <footer> © 2026 MiguelWileno. Todos os direitos reservados. </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

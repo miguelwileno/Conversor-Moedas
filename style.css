@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+
+}
+
+ body { 
+  background-color: #00294B; 
+  background-image:
+  url(assets/background1.png); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  
+}
+
+
+.logo-projeto {
+    width: 400px;
+    display: block;
+    margin: 50px auto;
+}
+
+main {
+    width: 375px;
+    background:#ffffff;
+    border-radius: 20px;
+    align-items: center;
+    padding: 44px 24px 23px;
+    display: block;
+    margin: 50px auto;
+
+}
+
+label {
+    color: #7777;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+select,
+input {
+    width: 100%;
+    border: 1px solid #6d0ccd;
+    border-radius: 4px;
+    height: 48px;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-size: 16px;
+    font-weight: 700;
+
+
+}
+
+button {
+    background: #6d0ccd;
+    color: #ffff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+}
+
+button:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    background-color: #7F00FF;
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+
+section {
+    border: 1px solid #6d0ccd;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-logo {
+    margin: 15px 0;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(58%) saturate(1737%) hue-rotate(181deg) brightness(94%) contrast(101%);
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+    font-weight: 400;
+
+    font-size: 14px;
+    color: #59595977
+}
+
+.valor-primario,
+.valor-secundario {
+    font-weight: 700;
+    font-size: 20px;
+    color: #6d0ccd;
+}
+
+
+
+footer {
+    color: rgb(234, 166, 20);
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+
+}
