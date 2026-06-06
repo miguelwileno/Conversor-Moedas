@@ -69,6 +69,8 @@ function ChangeSelectOutput() {
         CurrencyName.innerHTML = "Real"
         CurrencyImg.src = "./assets/brasil.png"
     }
+
+    ConverterValor()
 }
 
 

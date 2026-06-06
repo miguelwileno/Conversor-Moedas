@@ -3,31 +3,34 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    outline: none;
-
 }
 
- body { 
-  background-color: #00294B; 
-  background-image:
-  url(assets/background1.png); 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
-  
+body {
+    background-color: #00294B;
+    background-image:
+        url(assets/background1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 
 .logo-projeto {
-    width: 400px;
+    max-width: 300px;
+    width: 90%;
     display: block;
-    margin: 50px auto;
+    margin: 15px auto 0 auto;
 }
 
 main {
-    width: 375px;
-    background:#ffffff;
+    width: 90%;
+    max-width: 375px;
+    background: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(5px);
+    border-left: 0.1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid #eaa61485;
     border-radius: 20px;
     align-items: center;
     padding: 44px 24px 23px;
@@ -37,7 +40,7 @@ main {
 }
 
 label {
-    color: #7777;
+    color: #b4b0b096;
     font-weight: 400;
     font-size: 14px;
 
@@ -47,7 +50,7 @@ select,
 input {
     width: 100%;
     border: 1px solid #6d0ccd;
-    border-radius: 4px;
+    border-radius: 9px;
     height: 48px;
     margin-bottom: 24px;
     appearance: none;
@@ -61,20 +64,22 @@ input {
 button {
     background: #6d0ccd;
     color: #ffff;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: 500;
     font-size: 18px;
     width: 100%;
     border: none;
     cursor: pointer;
     height: 40px;
+
 }
 
 button:hover {
     transform: scale(1.01);
     cursor: pointer;
-    background-color: #7F00FF;
-    opacity: 0.8;
+    background-color: #eaa614;
+    color: #00294B;
+    opacity: 1.0;
 }
 
 button:active {
@@ -83,7 +88,7 @@ button:active {
 
 
 section {
-    border: 1px solid #6d0ccd;
+    border: 1px solid #ffffff50;
     border-radius: 20px;
     margin-top: 36px;
     padding: 12px;
@@ -94,7 +99,7 @@ section {
 
 .arrow-logo {
     margin: 15px 0;
-    filter: brightness(0) saturate(100%) invert(14%) sepia(58%) saturate(1737%) hue-rotate(181deg) brightness(94%) contrast(101%);
+
 }
 
 .currency-box {
@@ -108,23 +113,61 @@ section {
     font-weight: 400;
 
     font-size: 14px;
-    color: #59595977
+    color: #ffffff89
 }
 
 .valor-primario,
 .valor-secundario {
     font-weight: 700;
     font-size: 20px;
-    color: #6d0ccd;
+    color: #ffffff;
+}
+
+footer {
+    color: #eaa614;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+
 }
 
 
+@media screen and (max-width: 800px) {
 
-footer {
-    color: rgb(234, 166, 20);
-    position: fixed;
-    bottom: 30px;
-    width: 100%;
-    text-align: center;
+    body {
 
+        background-image:
+            url(assets/mobile/background-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo-projeto {
+        max-width: 120px;
+        height: auto;
+    }
+
+    main {
+        width: 80%;
+        max-width: 375px;
+        background: rgba(255, 255, 255, 0.027);
+    }
+
+    section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    footer {
+        color: #ffffff;
+        position: fixed;
+    }
 }
